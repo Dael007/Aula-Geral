@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/belanosima');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #e5e5db;
+    font-family: 'Belanosima', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    width: 100%;
+    background-color: #ed7f7e;
+    display: flex;
+    align-items: center;
+    padding: 18px 32px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.top-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Belanosima', sans-serif;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+.top-link:hover,
+.top-link.active {
+    background: #fff;
+    color: #ed7f7e;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 12px 60px 12px;
+}
+
+.petshop-section {
+    max-width: 980px;
+    width: 100%;
+}
+
+.petshop-section h1 {
+    font-size: 2.4rem;
+    color: #ed7f7e;
+    margin-bottom: 12px;
+}
+
+.intro {
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+}
+
+.servicos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: flex-start;
+}
+
+.servico-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px #00000023;
+    padding: 24px 18px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.servico-card h2 {
+    color: #ed7f7e;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.servico-card ul {
+    list-style-type: disc;
+    padding-left: 18px;
+    margin-bottom: 16px;
+}
+
+.servico-card li {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.preco {
+    font-size: 1.3rem;
+    color: #c94f4e;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.servico-card button {
+    background-color: #ed7f7e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Belanosima', sans-serif;
+    transition: background 0.2s;
+}
+
+.servico-card button:hover {
+    background-color: #c94f4e;
+}
+
+footer {
+    width: 100%;
+    background: #ed7f7e;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0 6px 0;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+@media (max-width: 900px) {
+    .servicos-lista { flex-direction: column; gap: 18px; align-items: center; }
+    .petshop-section { margin-left: 0px; }
+}

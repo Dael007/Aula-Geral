@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento - Pet Shoop</title>
+  <link rel="stylesheet" href="style5.css">
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/belanosima');
+  </style>
+  <script>
+    // JS simples para calcular desconto e exibir mensagem
+    function atualizarDesconto() {
+      const servico = document.getElementById('servico').value;
+      let valor = 0;
+      if(servico === "Banho & Tosa") valor = 80;
+      else if(servico === "Consulta Veterinária") valor = 120;
+      else if(servico === "Vacinação") valor = 90;
+      else if(servico === "Ração") valor = 150;
+      else if(servico === "Acessórios") valor = 70;
+      if(valor > 0) {
+        document.getElementById('valorNormal').textContent = "Valor normal: R$ " + valor.toFixed(2);
+        const desconto = valor * 0.8;
+        document.getElementById('valorDesconto').textContent = "Valor com 20% de desconto: R$ " + desconto.toFixed(2);
+      } else {
+        document.getElementById('valorNormal').textContent = "";
+        document.getElementById('valorDesconto').textContent = "";
+      }
+    }
+    function mostrarSucesso(e) {
+      e.preventDefault();
+      document.getElementById('sucesso').style.display = "block";
+    }
+    window.onload = function() {
+      document.getElementById('servico').addEventListener('change', atualizarDesconto);
+      document.getElementById('agendamentoForm').addEventListener('submit', mostrarSucesso);
+    }
+  </script>
+</head>
+<body>
+  <div class="header-agendamento">
+    Agendamento com 20% de Desconto!
+  </div>
+  <div class="agendamento-container">
+    <h2>Agende seu Serviço ou Produto</h2>
+    <form class="agendamento-form" id="agendamentoForm">
+      <label for="nome">Nome do Cliente:</label>
+      <input type="text" name="nome" id="nome" required>
+
+      <label for="servico">O que deseja comprar/serviço?</label>
+      <select id="servico" name="servico" required>
+        <option value="">Selecione...</option>
+        <option value="Banho & Tosa">Banho & Tosa</option>
+        <option value="Consulta Veterinária">Consulta Veterinária</option>
+        <option value="Vacinação">Vacinação</option>
+        <option value="Ração">Ração</option>
+        <option value="Acessórios">Acessórios e Brinquedos</option>
+      </select>
+      <span class="valor-normal" id="valorNormal"></span>
+      <span class="valor-desconto" id="valorDesconto"></span>
+
+      <label for="local">Endereço para entrega/atendimento:</label>
+      <textarea name="local" id="local" rows="2" required placeholder="Rua, número, bairro, cidade"></textarea>
+
+      <label for="detalhes">Detalhes do Pedido (opcional):</label>
+      <textarea name="detalhes" id="detalhes" rows="2" placeholder="Ex: Horário ideal, preferências, tipo de ração, etc."></textarea>
+
+      <button type="submit">Agendar com Desconto</button>
+      <div class="sucesso-msg" id="sucesso" style="display:none;">
+        Agendamento realizado com sucesso! Você garantiu 20% de desconto. Em breve entraremos em contato.
+      </div>
+    </form>
+  </div>
+</body>
+</html>

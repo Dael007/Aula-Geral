@@ -1,0 +1,119 @@
+@import url('https://fonts.cdnfonts.com/css/belanosima');
+
+body {
+  background-color: #e5e5db;
+  font-family: 'Belanosima', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-agendamento {
+  width: 100%;
+  background: #ed7f7e;
+  color: #fff;
+  font-family: 'Belanosima', sans-serif;
+  text-align: center;
+  padding: 24px 0 12px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.agendamento-container {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px #00000023;
+  max-width: 480px;
+  margin: 48px auto 32px auto;
+  padding: 32px 30px;
+  font-family: 'Belanosima', sans-serif;
+}
+
+.agendamento-container h2 {
+  color: #ed7f7e;
+  margin-bottom: 18px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.agendamento-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.agendamento-form label {
+  color: #ed7f7e;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.agendamento-form input,
+.agendamento-form textarea,
+.agendamento-form select {
+  padding: 10px;
+  border: 1px solid #ed7f7e;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  font-family: 'Belanosima', sans-serif;
+  background: #f9f9f7;
+}
+
+.agendamento-form textarea {
+  resize: vertical;
+}
+
+.valor-normal, .valor-desconto {
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+.valor-normal {
+  color: #222;
+  text-decoration: line-through;
+  margin-bottom: 0;
+}
+
+.valor-desconto {
+  color: #2e8b57;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.agendamento-form button {
+  background-color: #ed7f7e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: 'Belanosima', sans-serif;
+  transition: background 0.2s;
+  margin-top: 10px;
+}
+
+.agendamento-form button:hover {
+  background-color: #c94f4e;
+}
+
+.sucesso-msg {
+  color: #2e8b57;
+  background: #e7fbe7;
+  border: 1px solid #77dd77;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 14px;
+}
+
+@media (max-width: 600px) {
+  .agendamento-container {
+    padding: 16px 4vw;
+    max-width: 98vw;
+  }
+}

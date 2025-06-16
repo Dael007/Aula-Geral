@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    padding-top: 70px;
+}
+
+.faixa-topo {
+    background-color: rgb(100,0,0);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    padding: 9px 0;
+    box-sizing: border-box;
+}
+
+.logo-senai {
+    height: 48px;
+    margin-left: 20px;
+    
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.titulo-faixa {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    font-family: Arial, sans-serif;
+}
+
+.divisao_de_areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 36px auto 0 auto;
+    background: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+    align-items: flex-start;
+}
+
+.descricao {
+    flex: 1 1 220px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 18px 16px 18px 18px;
+    margin-right: 10px;
+    min-width: 200px;
+    max-width: 260px;
+    color: #333;
+    font-size: 1.03em;
+    box-shadow: 0 1px 5px rgba(100,0,0,0.05);
+}
+
+.menu {
+    flex: 2;
+    min-width: 270px;
+}
+
+.menu h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #900000;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 10px;
+    font-size: 1.1em;
+}
+.item input[type="number"] {
+    width: 60px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+.item button {
+    background: #900000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+.item button:hover {
+    background: #c0392b;
+}
+
+.carrinho {
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.carrinho h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #900000;
+}
+
+.carrinho table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 14px;
+    font-size: 1em;
+}
+.carrinho th, .carrinho td {
+    border: 1px solid #ccc;
+    padding: 7px 6px;
+    text-align: center;
+}
+.carrinho th {
+    background: #f3f3f3;
+}
+
+.resumo {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.resumo label {
+    margin-right: 8px;
+}
+.resumo input[type="number"] {
+    width: 55px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+.resumo div {
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    background: #900000;
+    color: white;
+    padding: 16px 0 10px 0;
+    font-size: 1.15em;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+@media (max-width: 1100px) {
+    .divisao_de_areas {
+        max-width: 98vw;
+    }
+}
+@media (max-width: 900px) {
+    .divisao_de_areas {
+        flex-direction: column;
+        gap: 20px;
+        padding: 16px 5vw;
+    }
+    .descricao {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: unset;
+    }
+    .carrinho, .menu {
+        min-width: unset;
+    }
+}
+.limpar-carrinho {
+    background: #b71c1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.limpar-carrinho:hover {
+    background: #ff5252;
+}
+.laranja{
+    width: 50px;
+    height: 50px;
+}
+.banana{
+    width: 60px;
+    height: 60px;
+}
+.melancia{
+    width: 30px;
+    height: 30px;
+}
+.maça{
+    width: 50px;
+    height: 50px;
+}
+.Melao{
+    width: 60px;
+    height: 50px;
+}
+.abacaxi{
+    width: 50px;
+    height: 60px;
+}
+.Pesego{
+    width: 50px;
+    height: 40px;
+}
+.Abacate{
+    width: 50px;
+    height: 40px;
+}

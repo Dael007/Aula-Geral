@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade :mercado - SENAI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Faixa com logo e título -->
+    <div class="faixa-topo">
+        <img src="senai-logo.png" alt="SENAI" class="logo-senai">
+        <span class="titulo-faixa">Atividade : Mercado</span>
+    </div>
+    <main class="divisao_de_areas">
+        <!-- Descrição da atividade à esquerda -->
+        <aside class="descricao">
+            <h2>Descrisao da Atividade</h2>
+            <p>
+                Crie um script, utilizando logica de programacao, que realiza as seguintes funcoes:
+            </p>
+            <ul>
+                <li>Adicionar itens no carrinho</li>
+                <li>Aplicar % de desconto ao total dos itens do carrinho</li>
+            </ul>
+            <p><strong>Observacao:</strong> Escrever o teu nome no rodape.</p>
+        </aside>
+        <!-- Lista de frutas -->
+        <section class="menu">
+            <h2>Menu de Frutas</h2>
+            <form id="form-frutas">
+                
+                <div class="item">
+                    <img class="laranja" src="laranja-1_xl-removebg-preview.png" alt="laaranja">
+                    <span>Laranja (R$ 2,00)</span>
+                    <input type="number" min="1" value="1" id="qtd-laranja">
+                    <button type="button" onclick="adicionarItem('Laranja', 2.00, 'qtd-laranja')">Adicionar</button>
+                </div>
+                <div class="item">
+                    <img class="banana" src="banana.png" alt="banana">
+                    <span>Banana (R$ 4,00)</span>
+                    <input type="number" min="1" value="1" id="qtd-banana">
+                    <button type="button" onclick="adicionarItem('Banana', 4.00, 'qtd-banana')">Adicionar</button>
+                </div>
+                <div class="item">
+                    <img class="melancia" src="melancia-removebg-preview (2).png" alt="melancia">
+                    <span>Melancia (R$ 16,00)</span>
+                    <input type="number" min="1" value="1" id="qtd-melancia">
+                    <button type="button" onclick="adicionarItem('Melancia', 16.00, 'qtd-melancia')">Adicionar</button>
+                </div>
+                <div class="item">
+                    <img class="maça" src="maça-removebg-preview.png" alt="Maça">
+                    <span>Maçã (R$ 4,00)</span>
+                    <input type="number" min="1" value="1" id="qtd-maca">
+                    <button type="button" onclick="adicionarItem('Maçã', 4.00, 'qtd-maca')">Adicionar</button>
+                </div>
+                <div class="item">
+                    <img class="Melao" src="melao-removebg-preview.png" alt="Melao">
+                    <span>Melao (R$ 5,00)</span>
+                    <input type="number" min="1" value="1" id="qtd-melao">
+                    <button type="button" onclick="adicionarItem('Melao', 5.00, 'qtd-melao')">Adicionar</button>
+                </div>
+                <div class="item">
+                    <img class="Abacate" src="abacate-removebg-preview.png" alt="Abacate">
+                    <span>Abacate (R$ 6,00)</span>
+                    <input type="number" min="1" value="1" id="qtd-abacate">
+                    <button type="button" onclick="adicionarItem('Abacate', 6.00, 'qtd-abacate')">Adicionar</button>
+                </div>
+                <div class="item">
+                    <img class="abacaxi" src="abacaxi-removebg-preview.png" alt="Abacaxi">
+                    <span>Abacaxi (R$ 4,50)</span>
+                    <input type="number" min="1" value="1" id="qtd-abacaxi">
+                    <button type="button" onclick="adicionarItem('Abacaxi', 4.50, 'qtd-abacaxi')">Adicionar</button>
+                </div>
+                </div>
+                <div class="item">
+                    <img class="Pesego" src="pesego-removebg-preview.png" alt="Pesego">
+                    <span>Pesego (R$ 20,00)</span>
+                    <input type="number" min="1" value="1" id="qtd-pessego">
+                    <button type="button" onclick="adicionarItem('Pesego', 20.00, 'qtd-pessego')">Adicionar</button>
+                </div>
+            </form>
+        </section>
+        <!-- Carrinho de compras -->
+        <section class="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Valor Unitário</th>
+                        <th>Quantidade</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-carrinho">
+                </tbody>
+            </table>
+            <div class="resumo">
+                <div>
+                    <label for="desconto">Desconto (%):</label>
+                    <input type="number" id="desconto" value="0" min="0" max="100" onchange="aplicarDesconto()">
+                </div>
+                <div>
+                    <strong>Total:</strong> R$ <span id="total">0.00</span>
+                </div>
+                <div>
+                    <strong>Valor do desconto:</strong> R$ <span id="valor-desconto">0.00</span>
+                </div>
+                <div>
+                    <strong>Valor final:</strong> R$ <span id="final">0.00</span>
+                </div>
+            </div>
+            <button type="button" class="limpar-carrinho" onclick="limparCarrinho()">Limpar tudo</button>
+        </section>
+        
+    </main>
+    <footer>
+        Quem fez : Daniel 
+    </footer>
+</body>
+</html>

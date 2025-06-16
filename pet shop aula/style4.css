@@ -1,0 +1,121 @@
+@import url('https://fonts.cdnfonts.com/css/belanosima');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #e5e5db;
+    font-family: 'Belanosima', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    width: 100%;
+    background-color: #ed7f7e;
+    display: flex;
+    align-items: center;
+    padding: 18px 32px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.top-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Belanosima', sans-serif;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+.top-link:hover,
+.top-link.active {
+    background: #fff;
+    color: #ed7f7e;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 12px 60px 12px;
+}
+
+.consulta-section {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px #00000023;
+    padding: 32px 28px 32px 28px;
+    max-width: 440px;
+    width: 100%;
+    margin-top: 28px;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.consulta-section h1 {
+    font-size: 2rem;
+    color: #ed7f7e;
+    margin-bottom: 10px;
+}
+
+.intro {
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+}
+
+.consulta-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.consulta-form label {
+    color: #ed7f7e;
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.consulta-form input,
+.consulta-form select,
+.consulta-form textarea {
+    padding: 10px;
+    border: 1px solid #ed7f7e;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    font-family: 'Belanosima', sans-serif;
+    margin-bottom: 4px;
+    background: #f9f9f7;
+    resize: none;
+}
+
+.consulta-form button {
+    background-color: #ed7f7e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Belanosima', sans-serif;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+.consulta-form button:hover {
+    background-color: #c94f4e;
+}
+
+footer {
+    width: 100%;
+    background: #ed7f7e;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0 6px 0;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 1rem;
+    margin-top: auto;
+}

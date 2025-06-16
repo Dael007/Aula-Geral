@@ -1,0 +1,129 @@
+@import url('https://fonts.cdnfonts.com/css/belanosima');
+
+body {
+    background-color: #e5e5db;
+    font-family: 'Belanosima', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.header-consulta {
+    background: #ed7f7e;
+    color: #fff;
+    padding: 28px 0 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+.logo-consulta {
+    height: 200px;
+    position: absolute;
+    left: 24px;
+    top: -60px;
+}
+
+.header-consulta h1 {
+    margin: 0;
+    font-size: 2.1rem;
+    font-family: 'Belanosima', sans-serif;
+    letter-spacing: 1px;
+}
+
+.consulta-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 48px 8px;
+}
+
+.bonus-section {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px #00000023;
+    max-width: 440px;
+    width: 100%;
+    padding: 32px 28px 24px 28px;
+    text-align: center;
+}
+
+.bonus-section h2 {
+    color: #ed7f7e;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+}
+
+.bonus-section p {
+    margin-bottom: 18px;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.consulta-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.consulta-form label {
+    color: #ed7f7e;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.consulta-form input,
+.consulta-form select,
+.consulta-form textarea {
+    padding: 10px;
+    border: 1px solid #ed7f7e;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    font-family: 'Belanosima', sans-serif;
+    background: #f9f9f7;
+}
+
+.consulta-form textarea {
+    resize: vertical;
+}
+
+.consulta-form button {
+    background-color: #ed7f7e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Belanosima', sans-serif;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+.consulta-form button:hover {
+    background-color: #c94f4e;
+}
+
+.sucesso-msg {
+    color: #2e8b57;
+    background: #e7fbe7;
+    border: 1px solid #77dd77;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 14px;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .bonus-section {
+        padding: 18px 3vw 14px 3vw;
+        max-width: 98vw;
+    }
+    .logo-consulta {
+        position: static;
+        display: block;
+        margin: 0 auto 12px auto;
+    }
+}

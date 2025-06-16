@@ -1,0 +1,27 @@
+div{
+    margin-top: 50px;
+    margin-left: 28%;
+}
+
+td{
+    border-top: 1px dashed black;
+}
+.Pre{
+    text-align: center;
+}
+.menu{
+    margin-left: 49%;
+    font-size: 26px;
+    
+    
+}
+.calor{
+    background-color: red;
+}
+.Data{
+    text-align: center;
+}
+.fazer{
+    width:57% ;
+    height: auto;
+}

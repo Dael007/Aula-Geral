@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas - Clínica Pet</title>
+    <link rel="stylesheet" href="style4.css">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/belanosima');
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <a class="top-link" href="paginacentral.html">Início</a>
+        <a class="top-link" href="index3.html">Pet shop</a>
+        <a class="top-link" href="index2.html">Adote um pet</a>
+        <a class="top-link active" href="index4.html">Consultas</a>
+    </header>
+    <main>
+        <section class="consulta-section">
+            <h1>Agende a Consulta do Seu Pet!</h1>
+            <p class="intro">Preencha os dados para agendar uma consulta para seu cachorro ou gato.</p>
+            <form class="consulta-form">
+                <label for="nome">Nome do Tutor:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="pet">Nome do Pet:</label>
+                <input type="text" id="pet" name="pet" required>
+
+                <label for="tipo">Tipo de Animal:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                </select>
+
+                <label for="data">Data da Consulta:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="hora">Horário:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="obs">Observações:</label>
+                <textarea id="obs" name="obs" rows="3" placeholder="Descreva sintomas ou necessidades especiais"></textarea>
+
+                <button type="submit">Agendar Consulta</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
