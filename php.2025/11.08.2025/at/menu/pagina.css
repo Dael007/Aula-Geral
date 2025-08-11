@@ -1,0 +1,44 @@
+* {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.escolhe {
+  margin-bottom: 30px;
+}
+
+/* Centraliza os formulários (botões) lado a lado */
+.botoes-central {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espaçamento entre botões */
+  margin-bottom: 20px;
+}
+
+.btn-form button {
+  padding: 15px 50px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Contêiner para imagens alinhadas centralizadas */
+.imagens-baixo {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* espaço entre imagens */
+  margin-top: 20px;
+}
+
+/* Redefina os estilos das imagens conforme sua preferência futura */
+.imagens-baixo img {
+  width: 150px; /* exemplo de largura, ajuste conforme precisar */
+  height: auto;
+}
