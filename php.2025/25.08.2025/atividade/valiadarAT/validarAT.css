@@ -1,0 +1,50 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    text-align: center;
+    padding-top: 80px;
+    margin: 0;
+}
+
+/* Título */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Campo de entrada */
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão */
+button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+

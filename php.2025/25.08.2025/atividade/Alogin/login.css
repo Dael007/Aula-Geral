@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: url("sim.jpg") no-repeat center center fixed;
+  background-size: cover;
+  
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.bemvindo {
+  color: white;
+  border: 3px solid black;
+  background-color: #f86254;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.login2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #b8fd99;
+}
+
+.username, .password, .submit {
+  width: 200px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+.submit {
+  background-color: #f86254;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
