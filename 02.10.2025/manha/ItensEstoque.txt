@@ -1,0 +1,64 @@
+create database DB_ALMOXARIFADO;
+
+use DB_ALMOXARIFADO;
+
+create table Localizacao(
+ID int auto_increment primary key,
+Nome varchar (50) not null,
+Descricao text
+);
+
+create table CategoriaItens(
+ID int auto_increment primary key,
+Localizacao int not null,
+Nome varchar (50) not null,
+Descricao text,
+FOREIGN key (Localizacao) references Localizacao(ID)
+);
+
+create table ItensEstoque(
+ID INT auto_increment primary key,
+nome varchar(100),
+Categoria INT not null,
+Descricao text,
+Quantidade INT not null default 0,
+Codigo varchar (30) not null,
+NomeImagem varchar (60),
+FOREIGN key (Categoria) references CategoriaItens(ID)
+);
+ insert into localizacao (Nome, Descricao)
+ values('Galpao A', '...');
+ insert into localizacao(Nome, Descricao)
+values ('Galpao B', '...');
+insert into localizacao(Nome, Descricao)
+values ('cafeteria','Lugar de tomar cafe');
+
+
+insert into CategoriaItens(Localizacao, Nome, Descricao)
+values (1, 'Massarico', '...');
+insert into CategoriaItens(Localizacao, Nome, Descricao)
+values (2, 'Ferro', '...');
+insert into CategoriaItens(Localizacao, Nome, Descricao)
+values (3, 'pao', '...');
+
+insert into ItensEstoque(id, nome, Categoria, Descricao, Quantidade, Codigo, NomeImagem)
+values (4, 'farda', 2, '...', 3 , '89#4#OP', 'farda.png');
+
+insert into ItensEstoque(id, nome, Categoria, Descricao, Quantidade, Codigo, NomeImagem)
+values (5, 'Vidro', 3, '...', 50, 'GGFT#RT4', 'Vidro.png');
+ 
+insert into ItensEstoque(id, nome, Categoria, Descricao, Quantidade, Codigo, NomeImagem)
+values (6, 'Fogao', 4, 'Utilizado para fazer alimentos', 4, 'FGD#DHA#', 'Fogao.png' );
+
+
+update CategoriaItens 
+set  nome = 'Batata'
+where id = 3; 
+
+delete from ItensEstoque 
+where id = 4;
+
+
+
+
+

@@ -1,0 +1,40 @@
+create database DBRH;
+use DBRH;
+create table funcionarios(
+id int auto_increment not null,
+nome varchar (100),
+Data_nascimento Date,
+	primary key(id)
+);
+insert into funcionarios(id, nome, Data_nascimento)
+values (1, 'Joao', '2000-8-10');
+insert into funcionarios (id, nome, Data_nascimento)
+values (2, 'Carlos', '2000-8-19');
+insert into funcionarios(id, nome, Data_nascimento)
+values (3, 'Jose', '2003-9-20');
+insert into funcionarios(id, nome, Data_nascimento)
+values (4, 'Carla', '2004-9-23');
+insert into funcionarios(id, nome, Data_nascimento)
+values (5, 'Maria', '2000-3-20');
+insert into funcionarios(id, nome, Data_nascimento)
+values (6, 'Fernando', '2000-3-23');
+insert into funcionarios(id, nome, Data_nascimento)
+values (7, 'Fernanda', '2000-4-1');
+insert into funcionarios(id, nome, Data_nascimento)
+values (8, 'Jamiuto', '1999-2-23');
+insert into funcionarios(id, nome, Data_nascimento)
+values (9, 'Rogegerio', '1998-10-23');
+
+
+update funcionarios
+Set nome = 'Bruno'
+where nome = 3;
+
+UPDATE funcionarios
+set Data_nascimento = '1999-10-10'
+WHERE id >= 3;
+
+DELETE FROM funcionarios WHERE id = 9;
+
+
+select * from funcionarios;
