@@ -1,0 +1,15 @@
+CREATE DATABASE localizacoes;
+use localizacoes;
+create table lugares (
+id int auto_increment primary key, 
+nome varchar(100) not null,
+descrisao text not null
+);
+alter table lugares add column descricao text not null;
+ALTER TABLE lugares CHANGE descrisao descricao TEXT NOT NULL;
+select * from lugares;
+DESCRIBE lugares;
+alter table lugares drop column descricao;
+ALTER TABLE lugares CHANGE descrisao descricao TEXT NOT NULL;
+delete from lugares where id = 4 ; 
+
