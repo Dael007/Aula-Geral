@@ -1,0 +1,14 @@
+create database VET;
+use VET;
+
+create table Pet(
+ID int not null auto_increment, 
+nome varchar (50),
+idade int,
+raca varchar (20),
+descricao text,
+primary key (ID)
+);
+select * from pet;
+delete from pet where id = 5; 
+
