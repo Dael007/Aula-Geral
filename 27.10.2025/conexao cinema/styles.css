@@ -1,0 +1,134 @@
+* { /* Aplica box-sizing para todos os elementos */
+  box-sizing: border-box; /* Inclui bordas e padding no cálculo do tamanho */
+}
+
+body { /* Estilos gerais do corpo da página */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif; /* Fonte moderna e padrão do sistema */
+  margin: 0; /* Remove margens padrão */
+  background: #0e1013; /* Fundo escuro */
+  color: #e6ebf0; /* Texto claro para contraste */
+}
+
+header { /* Barra de topo */
+  padding: 24px 16px; /* Espaçamento interno */
+  background: #151922; /* Cor de fundo do header */
+  border-bottom: 1px solid #242a35; /* Linha inferior sutil */
+}
+
+header h1 { /* Título do header */
+  margin: 0; /* Remove margem padrão */
+  font-size: 20px; /* Tamanho do título */
+}
+
+main { /* Conteúdo principal centralizado */
+  max-width: 960px; /* Largura máxima do conteúdo */
+  margin: 24px auto; /* Centraliza e adiciona margem vertical */
+  padding: 0 16px; /* Respiro lateral */
+}
+
+form { /* Linha de busca */
+  display: flex; /* Organiza elementos em linha */
+  gap: 8px; /* Espaço entre input e botão */
+  margin-bottom: 16px; /* Espaço abaixo do formulário */
+}
+
+input[type="text"] { /* Campo de texto da busca */
+  flex: 1; /* Ocupa todo o espaço disponível */
+  padding: 10px 12px; /* Espaçamento interno */
+  border: 1px solid #2a3240; /* Borda sutil */
+  border-radius: 8px; /* Cantos arredondados */
+  background: #0f131a; /* Fundo do input */
+  color: #e6ebf0; /* Cor do texto */
+}
+
+button { /* Botão padrão */
+  padding: 10px 14px; /* Tamanho do botão */
+  border: 1px solid #2a3240; /* Borda sutil */
+  border-radius: 8px; /* Cantos arredondados */
+  background: #1a2332; /* Fundo do botão */
+  color: #e6ebf0; /* Texto do botão */
+  cursor: pointer; /* Cursor de ação */
+}
+
+button:hover { /* Efeito ao passar o mouse no botão */
+  background: #223046; /* Escurece um pouco o botão */
+}
+
+table { /* Tabela de resultados */
+  width: 100%; /* Ocupa toda a largura disponível */
+  border-collapse: collapse; /* Remove espaços entre células */
+  background: #0f131a; /* Fundo da tabela */
+  border: 1px solid #2a3240; /* Borda externa sutil */
+  border-radius: 10px; /* Cantos arredondados */
+  overflow: hidden; /* Esconde cantos arredondados corretamente */
+}
+
+th, td { /* Células de cabeçalho e dados */
+  padding: 12px 10px; /* Espaçamento interno */
+  border-bottom: 1px solid #202838; /* Linha divisória entre linhas */
+  text-align: left; /* Alinha conteúdo à esquerda */
+}
+
+th { /* Cabeçalho da tabela */
+  background: #151b26; /* Fundo do cabeçalho */
+  color: #b9c3d0; /* Cor do texto do cabeçalho */
+}
+
+tr:hover td { /* Destaque ao passar o mouse nas linhas */
+  background: #121822; /* Realce sutil da linha */
+}
+
+.muted { /* Texto secundário/explicativo */
+  color: #8e9bad; /* Cinza azulado discreto */
+  font-size: 12px; /* Tamanho menor */
+}
+
+.pill { /* Etiqueta (pílula) para o gênero */
+  display: inline-block; /* Exibe como bloco em linha */
+  padding: 2px 8px; /* Espaçamento interno da pílula */
+  border: 1px solid #2a3240; /* Borda sutil */
+  border-radius: 999px; /* Formato de pílula */
+  background: #151b26; /* Fundo da pílula */
+  color: #c8d1dd; /* Texto da pílula */
+  font-size: 12px; /* Tamanho do texto */
+}
+
+/* Estilos de foco e linha interativa */
+tr.data-row { /* Linha de dados interativa */
+  outline: 0; /* Remove contorno padrão do navegador */
+}
+
+tr.data-row:focus td { /* Quando a linha recebe foco */
+  box-shadow: inset 0 0 0 2px #2b81ff33; /* Realce interno com sombra */
+  background: #131a25; /* Ajuste de fundo para foco */
+}
+
+tr.data-row[aria-expanded="true"] td { /* Linha ativa/expandida */
+  background: #121a28; /* Fundo ligeiramente diferente */
+}
+
+/* Animação da linha de detalhes */
+.details-row > .muted { /* Texto auxiliar dentro da linha de detalhes */
+  font-size: 12px; /* Tamanho reduzido */
+}
+
+.details-row .details-panel { /* Painel animado dos detalhes */
+  overflow: hidden; /* Oculta conteúdo quando recolhido */
+  max-height: 0; /* Começa recolhido */
+  opacity: .0; /* Transparente quando fechado */
+  transition: max-height .28s ease, opacity .22s ease, transform .24s ease; /* Animações suaves */
+  transform: translateY(-4px); /* Leve deslocamento para cima ao fechar */
+  padding: 0 4px; /* Padding horizontal quando fechado */
+}
+
+.details-row[data-open="true"] .details-panel { /* Estado aberto do painel */
+  max-height: 240px; /* Altura máxima visível (suficiente para o conteúdo) */
+  opacity: 1; /* Totalmente visível quando aberto */
+  transform: translateY(0); /* Remove deslocamento */
+  padding: 8px 4px; /* Padding quando aberto */
+}
+
+.details-panel { /* Conteúdo interno do painel de detalhes */
+  border-top: 1px solid #202838; /* Linha separadora do conteúdo da linha */
+  color: #cbd5e1; /* Cor do texto dos detalhes */
+}

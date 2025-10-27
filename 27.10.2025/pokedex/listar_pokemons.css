@@ -1,0 +1,96 @@
+/* Reset básico e tipografia padrão */
+* {
+    margin: 0; /* zera margens padrão */
+    padding: 0; /* zera paddings padrão */
+    box-sizing: border-box; /* inclui bordas e padding no cálculo de largura/altura */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* fonte base */
+}
+
+/* Layout da página e cor de fundo temática */
+body {
+    background-color: #f44336; /* vermelho pokédex */
+    display: flex; /* centraliza container usando flex */
+    justify-content: center; /* centro horizontal */
+    align-items: center; /* centro vertical */
+    padding: 40px; /* respiro externo */
+    min-height: 100vh; /* ocupa a altura da viewport */
+}
+
+/* Cartão central onde a lista é exibida */
+.container {
+    background-color: white; /* contraste com fundo vermelho */
+    padding: 30px; /* espaçamento interno */
+    border-radius: 12px; /* cantos arredondados */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3); /* sombra suave */
+    width: 100%; /* ocupa largura disponível */
+    max-width: 1000px; /* limita largura máxima */
+}
+
+/* Título da página */
+h1 {
+    text-align: center; /* centraliza texto */
+    margin-bottom: 20px; /* separa da tabela/botão */
+    color: #212121; /* cinza escuro legível */
+}
+
+/* Botão para criar novo registro */
+.botao-adicionar {
+    display: inline-block; /* permite padding horizontal */
+    margin-bottom: 20px; /* separação da tabela */
+    background-color: #2e7d32; /* verde de ação positiva */
+    color: white; /* texto branco */
+    padding: 10px 20px; /* área clicável confortável */
+    text-decoration: none; /* remove sublinhado */
+    border-radius: 6px; /* cantos arredondados */
+    font-weight: bold; /* destaque */
+    transition: background-color 0.3s ease; /* suaviza hover */
+}
+
+/* Estado hover do botão adicionar */
+.botao-adicionar:hover {
+    background-color: #1b5e20; /* escurece no hover */
+}
+
+/* Tabela de resultados */
+table {
+    width: 100%; /* ocupa largura do container */
+    border-collapse: collapse; /* remove espaços entre bordas das células */
+    text-align: left; /* alinha conteúdo à esquerda */
+}
+
+/* Células de cabeçalho e corpo */
+th, td {
+    padding: 12px; /* espaçamento interno */
+    border-bottom: 1px solid #ddd; /* separadores horizontais */
+}
+
+/* Cabeçalho da tabela */
+th {
+    background-color: #eeeeee; /* cinza claro */
+    color: #212121; /* texto escuro */
+}
+
+/* Miniaturas das fotos dos Pokémons */
+td img {
+    width: 60px; /* miniatura fixa */
+    height: 60px; /* miniatura fixa */
+    object-fit: cover; /* preenche mantendo o recorte */
+    border-radius: 6px; /* cantos arredondados */
+    border: 2px solid #ccc; /* borda sutil */
+}
+
+/* Botão de ação para visualizar/editar */
+.botao-visualizar {
+    background-color: #1565c0; /* azul de ação */
+    color: white; /* texto branco */
+    padding: 6px 12px; /* área clicável */
+    text-decoration: none; /* sem sublinhado */
+    border-radius: 6px; /* cantos arredondados */
+    font-weight: bold; /* destaque */
+    transition: background-color 0.3s ease; /* suaviza hover */
+}
+
+/* Estado hover do botão visualizar */
+.botao-visualizar:hover {
+    background-color: #0d47a1; /* azul mais escuro no hover */
+}
