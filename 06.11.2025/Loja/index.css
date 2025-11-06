@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 0 12px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hint {
+  color: #555;
+  font-size: 12px;
+}
+    /* --- Estilo geral --- */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 0 12px;
+}
+
+/* --- Cabeçalhos e formulários --- */
+h1 {
+  font-size: 22px;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hint {
+  color: #555;
+  font-size: 12px;
+}
+
+/* --- Mensagens de status --- */
+.msg {
+  padding: 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.ok {
+  background: #e6ffed;
+  color: #0a5721;
+  border: 1px solid #9be2b1;
+}
+
+.erro {
+  background: #ffe8e8;
+  color: #7a0b0b;
+  border: 1px solid #f3b0b0;
+}
+
+/* --- Links --- */
+a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
